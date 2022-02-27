@@ -1,0 +1,53 @@
+.join-us-footer {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+
+.social-icons-footer {
+    width: 206px;
+    height: 44px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+
+    &--background {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, 
+        &:focus {
+            background-color: var(--main-color);
+            cursor: pointer;
+        }
+    }
+
+    &__instagram, 
+    &__twitter, 
+    &__facebook, 
+    &__linkedin {
+        fill: #fff;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .join-us-footer {
+        margin-left: 144px;
+        margin-top: 5px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .join-us-footer {
+        margin-top: 12px;
+        margin-left: 70px;
+    }
+}
